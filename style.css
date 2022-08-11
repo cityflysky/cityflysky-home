@@ -1,0 +1,1204 @@
+/*
+Global site setting
+*/
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Patrick Hand', cursive;
+  /*
+  fontsize
+  */
+
+  color: #1E3F20;
+}
+
+body {
+}
+
+.container {
+  width: 100%;
+  min-height:100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+h1 {
+  display: block;
+  font-family: 'Chewy', cursive;
+  font-size: 5em;
+  margin: 20px;
+  font-weight: bold;
+  color: #1E3F20;
+  text-align: center;
+}
+
+h3 {
+  display: block;
+  font-family: 'Chewy', cursive;
+  font-size: 2em;
+  margin: 20px;
+  font-weight: bold;
+  color: #1E3F20;
+  text-align: center;
+}
+
+h5 {
+  display: block;
+  font-family: 'Chewy', cursive;
+  font-size: 2em;
+  margin: 20px;
+  font-weight: bold;
+  color: #1E3F20;
+  text-align: center;
+}
+
+P {
+  font-family: 'Patrick Hand', cursive;
+  text-align: center;
+  font-size: 1.3em;
+  margin: 20px;
+  color: #1E3F20;
+}
+
+A {
+  font-family: 'Chewy', cursive;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #1E3F20;
+  text-decoration: none;
+}
+
+
+/*
+Navigation
+*/
+/* Add a black background color to the top navigation */
+.mainnav {
+  background-color: #f8dba5;
+  overflow: hidden;
+  position: fixed; top: 0; left: 0; z-index: 9999;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.mainnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+#lslogo {
+  height: 52px;
+}
+
+/* Change the color of links on hover */
+.mainnav a:hover {
+  background-color: #96CB5E;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.mainnav a.active {
+  color: white;
+}
+
+#streetwearbt {
+  border: dashed #0094C6 5px;
+  border-radius: 8px;
+  padding-left: 50px;
+  padding-right:50px;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.mainnav .icon {
+  display: none;
+}
+
+
+/*
+Mobile menu -- use java to show
+*/
+@media screen and (max-width: 600px) {
+  .mainnav a:not(:first-child) {display: none;}
+  .mainnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .mainnav.responsive {position: relative;}
+  .mainnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .mainnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+
+  }
+}
+
+/*
+Banner section of the page. This is the banner image and the CTA
+that can be on top of it
+*/
+
+
+.banner img {
+  width: 100%;
+}
+
+.banner_text {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+
+
+}
+
+/*
+Main section of the page. Mostly text about the project
+*/
+.main, .roadmap, .faq  {
+  padding: 30px 30px;
+  background: #757780;
+}
+
+/*
+Rarity section of the page. Here we set how the left and righ boxes behave.
+Also the styling of the content in it
+*/
+.rarity {
+  display: flex;
+
+}
+
+.rarity img {
+  width: 60%;
+  border-radius: 15px;
+}
+
+.counter {
+  display: flex;
+  margin-top: 30px;
+}
+
+.rarity h3 {
+  text-align: center;
+  font-family: 'Chewy', cursive;
+  font-size: 5em;
+  font-weight: bold;
+  color: #f8dba5;
+
+}
+
+.rarity h4 {
+  text-align: center;
+  font-family: 'Chewy', cursive;
+  font-size: 2.5em;
+  margin: 5px 40;
+  font-weight: bold;
+  color: #f8dba5;
+}
+
+.rarity P {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.5em;
+  margin: 10px;
+  font-weight: bold;
+  color: #829399;
+  text-align: right;
+}
+
+.left, .right {
+  flex: 1;
+  align-items: center;
+  padding: 5%;
+  background-color: #757780;
+}
+
+.right table {
+  width: 100%;
+}
+
+.right table tr:hover {
+  background-color: #ddd;
+}
+
+/*
+MintArea
+*/
+.mintarea {
+ padding: 30px 30px;
+ background-color: #829399;
+ }
+
+.mintwrapper {
+  margin-top: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+  align-items: center;
+}
+
+#minting-dapp {
+  width: 100%;
+  border-style: dashed;
+  border-color: #f8dba5;
+  border-width: thick;
+  padding: 10px 5px;
+
+
+}
+
+
+button {
+  background-color: #f8dba5;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+
+/*
+RoadmapArea
+*/
+.roadmap ul {
+  list-style: none;
+  font-family: 'Patrick Hand', cursive;
+  text-align: left;
+  font-size: 1.6em;
+  margin-left: 40px;
+  color: #1E3F20;
+}
+
+.done {
+  text-decoration: line-through;
+  text-decoration-color: #f8dba5;
+  text-decoration-style: wavy;
+}
+
+.content {
+  margin-left: 30px;
+  padding-top:20px;
+  padding-bottom: 20px;
+  width: 100%;
+  display: inline-block;
+  background-color: #829399;
+}
+
+.step {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: cream;
+}
+
+.v-stepper {
+  position: relative;
+}
+
+.step .circle {
+  background-color: transparent;
+  border: 5px solid gray;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+
+}
+
+.step .line {
+    top: 49px;
+    left: 22px;
+    height: 92%;
+    position: absolute;
+    border-left: 5px solid gray;
+}
+
+.step.completed .circle {
+  visibility: visible;
+  background-color: #829399;
+  border-color: #f8dba5;
+}
+
+.step.completed .line {
+  border-left: 5px solid #f8dba5;
+}
+
+.step.active .circle {
+  background-color: transparent;
+  visibility: visible;
+  border-color: #f8dba5;
+}
+
+.step.empty .circle {
+  visibility: hidden;
+}
+
+.step.empty .line {
+  top: 0;
+  height: 150%;
+}
+
+.step:last-child .line {
+  border-left: 5px solid white;
+  z-index: -1;
+}
+
+/*
+FAQ Section
+*/
+
+.faq {
+  padding: 30px 0;
+}
+
+details h2 {
+  text-align:center;
+  padding: 50px 20px;
+}
+
+details {
+    padding: .2em .2em 0;
+    margin-bottom: 50px;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+    background-color: #74a725;
+}
+
+details[open] {
+    padding: .5em;
+    background-color: #f8dba5;
+}
+
+details[open] summary {
+    margin-bottom: .5em;
+
+}
+
+/*
+Here are some NFT examples
+*/
+.sloth-wrapper {
+  justify-content: space-around;
+  text-align: center;
+  padding: 20px 0px;
+  display: flex;
+}
+
+.nft img {
+  width: 250px;
+
+  border-radius: 50%;
+  border: 10px solid #1E3F20;
+}
+
+
+
+/*
+FooterArea
+*/
+.community {
+  background-color: #757780;
+  padding: 30px 10px;
+}
+
+.community h1 {
+  color: #f8dba5;
+}
+  .button {
+    background-color: #f8dba5;
+    Margin: 5% 20%;
+    padding: 20px 50px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .button:hover {
+    transform: translateY(-3px);
+     box-shadow: 0 10px 20px rgba(0, 0, 0,);
+  }
+  .foot  {
+      width: 100%;
+      padding: 30px 30px;
+
+      background-color: #96CB5E;
+  }
+  .footwrapper {
+    display: flex;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+    .foot img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .footnote {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  .mintwrapper {
+    flex-direction: column;
+    row-gap: 2rem;
+    }
+  .box {
+    width: 100%;
+  }
+  /* Rarity section */
+  .rarity {
+    flex-direction: column;
+  }
+  /* Sloth */
+  .sloth-wrapper {
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+  }
+  #ls_logo {
+    display: none;
+  }
+}
+
+
+
+/* Mobile Menu*/
+
+
+/*
+    Stying of the mint dApp
+    Styling of the container in the regular page scetion (MintArea)
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+
+
+
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+Ensure the default browser behavior of the `hidden` attribute.
+*/
+
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+
+
+strong {
+  font-weight: 600;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+span.emoji {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(254 202 202 / var(--tw-border-opacity));
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.error::before {
+  content: "Error";
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.error button {
+  display: inline-block;
+  margin-top: 0.75rem;
+  margin-left: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
+.error button:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgb(220 38 38 / var(--tw-border-opacity));
+}
+
+button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: #f8dba5 / var(--tw-bg-opacity);
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+button:hover {
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+}
+button.primary {
+  --tw-text-opacity: 1;
+  color: #fff / var(--tw-text-opacity);
+  --tw-bg-opacity: 1;
+  background-color: #f8dba5;
+  --tw-border-opacity: 1;
+  border-color: rgb(99 102 241 / var(--tw-border-opacity));
+}
+button.primary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: #96CB5E;
+  --tw-border-opacity: 1;
+  border-color: rgb(79 70 229 / var(--tw-border-opacity));
+}
+button.primary:disabled {
+  opacity: 0.3;
+}
+button.primary:disabled:hover {
+  cursor: not-allowed;
+}
+
+input[type=text] {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 9999px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(79 70 229 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+input[type=text]:focus {
+  --tw-text-opacity: 1;
+  color: rgb(79 70 229 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgb(165 180 252 / var(--tw-border-opacity));
+}
+input[type=text]:disabled {
+  opacity: 0.5;
+}
+input[type=text]:disabled:hover {
+  cursor: not-allowed;
+}
+
+label {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  margin-left: 0.25rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(79 70 229 / var(--tw-text-opacity));
+}
+
+#minting-dapp {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 70rem;
+}
+#minting-dapp .no-wallet {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+#minting-dapp .no-wallet .use-block-explorer:not(:first-child) {
+  margin-top: 0.75rem;
+}
+#minting-dapp .no-wallet .use-block-explorer:not(:first-child)::before {
+  content: "";
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  width: 3rem;
+  border-top-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+}
+#minting-dapp .no-wallet .merkle-proof-manual-address {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+#minting-dapp .no-wallet .merkle-proof-manual-address h2 {
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(79 70 229 / var(--tw-text-opacity));
+}
+#minting-dapp .no-wallet .merkle-proof-manual-address p {
+  margin-top: 0.75rem;
+}
+#minting-dapp .no-wallet .merkle-proof-manual-address .feedback-message {
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 231 255 / var(--tw-bg-opacity));
+}
+#minting-dapp .no-wallet .merkle-proof-manual-address input {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+#minting-dapp .no-wallet .merkle-proof-manual-address button {
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-width: 0px;
+}
+#minting-dapp .collection-not-ready {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+#minting-dapp .collection-not-ready .spinner {
+  display: inline;
+  margin-left: -0.25rem;
+  margin-right: 0.75rem;
+  height: 2rem;
+  width: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(99 102 241 / var(--tw-text-opacity));
+}
+@-webkit-keyframes spin {
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+#minting-dapp .collection-not-ready .spinner {
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+#minting-dapp .collection-status {
+  display: grid;
+  grid-auto-rows: -webkit-min-content;
+  grid-auto-rows: min-content;
+}
+@media (min-width: 640px) {
+
+  #minting-dapp .collection-status {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+#minting-dapp .collection-status {
+  border-radius: 0.5rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1.2rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+#minting-dapp .collection-status > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#minting-dapp .collection-status > * .label {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(79 70 229 / var(--tw-text-opacity));
+}
+@media (min-width: 640px) {
+
+  #minting-dapp .collection-status .user-address {
+    grid-column: span 2 / span 2;
+  }
+}
+#minting-dapp .collection-status .user-address {
+  overflow: hidden;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+}
+#minting-dapp .collection-status .user-address .address {
+  width: 100%;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+#minting-dapp .collection-status .supply .label, #minting-dapp .collection-status .current-sale .label {
+  display: block;
+  font-weight: 600;
+}
+#minting-dapp .collection-status .supply.supply, #minting-dapp .collection-status .current-sale.supply {
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+}
+@media (min-width: 640px) {
+
+  #minting-dapp .collection-status .supply.supply, #minting-dapp .collection-status .current-sale.supply {
+    border-bottom-width: 0px;
+  }
+
+  #minting-dapp .collection-status .supply.supply, #minting-dapp .collection-status .current-sale.supply {
+    border-right-width: 1px;
+  }
+}
+#minting-dapp .cannot-mint, #minting-dapp .not-mainnet, #minting-dapp .collection-sold-out {
+  border-radius: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+#minting-dapp .cannot-mint.cannot-mint .emoji, #minting-dapp .not-mainnet.cannot-mint .emoji, #minting-dapp .collection-sold-out.cannot-mint .emoji {
+  display: block;
+  line-height: 2.5rem;
+}
+#minting-dapp .cannot-mint.not-mainnet, #minting-dapp .not-mainnet.not-mainnet, #minting-dapp .collection-sold-out.not-mainnet {
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(234 179 8 / var(--tw-border-opacity));
+}
+#minting-dapp .cannot-mint.not-mainnet .small, #minting-dapp .not-mainnet.not-mainnet .small, #minting-dapp .collection-sold-out.not-mainnet .small {
+  display: block;
+
+  line-height: 1.25rem;
+}
+#minting-dapp .cannot-mint.collection-sold-out h2, #minting-dapp .not-mainnet.collection-sold-out h2, #minting-dapp .collection-sold-out.collection-sold-out h2 {
+  margin-bottom: 0.75rem;
+
+  line-height: 1.75rem;
+}
+#minting-dapp .mint-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+#minting-dapp .mint-widget .preview {
+  padding: 2rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(199 210 254 / var(--tw-bg-opacity));
+}
+#minting-dapp .mint-widget .preview img {
+  margin: auto;
+  max-height: 13rem;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.4));
+}
+#minting-dapp .mint-widget .price {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#minting-dapp .mint-widget > * {
+  width: 100%;
+}
+#minting-dapp .mint-widget > *:not(:last-child) {
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+}
+#minting-dapp .mint-widget .controls {
+  display: flex;
+  align-items: stretch;
+}
+#minting-dapp .mint-widget .controls > * {
+  border-radius: 0px;
+  border-width: 0px;
+}
+#minting-dapp .mint-widget .controls .decrease, #minting-dapp .mint-widget .controls .mint-amount {
+  border-right-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
+}
+#minting-dapp .mint-widget .controls .mint-amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(79 70 229 / var(--tw-text-opacity));
+}
