@@ -1202,3 +1202,16 @@ label {
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
 }
+.join-button{
+  text-align: center;
+  padding: 12px 10px;
+  margin: 20px  auto;
+  width: 400px;
+  font-size: 30px;
+  border: 1px #111 solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.join-button:active{
+  transform: translate(6px,3px);
+}
